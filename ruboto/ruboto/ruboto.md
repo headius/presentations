@@ -71,11 +71,19 @@ TODO
 !SLIDE bullets
 #res/values/
     strings.xml
-      <string name="my_string_name">Any Value</string>
-        Reference via Java: getResources().getText(R.string.main_title)
-        Reference via XML: <application android:label="@string/my_string_name"/>
+      <string name="my_string_name">
+        Any Value
+      </string>
+        Reference via Java:
+          getResources().getText(
+            R.string.main_title)
+        Reference via XML:
+          <application
+            android:label=
+            "@string/my_string_name"/>
 !SLIDE bullets
-#src/com/example/yourapp/YourAppActivity.java
+#src/com/example/yourapp/
+#      YourAppActivity.java
     @@@java
     onCreate(Bundle priorState)
     onRestart()
@@ -86,7 +94,7 @@ TODO
     onDestroy()
 !SLIDE bullets transition=scrollUp
     @@@java
-    package com.mcgavren.jay.ruboto;
+    package com.headius.ruboto;
     import android.os.Bundle;
 
     public class MyActivity extends org.ruboto.RubotoActivity {

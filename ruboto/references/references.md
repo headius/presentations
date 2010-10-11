@@ -5,6 +5,7 @@
 * http://ruboto.com/
 * http://github.com/ruboto
 * http://developer.android.com/sdk/index.html
+* http://blog.headius.com
 * http://jay.mcgavren.com/presentations
 
 !SLIDE bullets transition=fade

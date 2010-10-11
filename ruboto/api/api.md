@@ -58,7 +58,8 @@
 !SLIDE
 #Hardware: TouchEvent
     @@@ruby
-    event.get_x(event.find_pointer_index(pointer_id))
+    event.get_x(
+      event.find_pointer_index(pointer_id))
 !SLIDE
 #Hardware: Sensors
     @@@ruby
@@ -73,7 +74,8 @@
 !SLIDE
 #Notifications: Toast
     @@@ruby
-    Toast.make_text(self, "#{view} was clicked", 5000).show
+    Toast.make_text(
+      self, "#{view} was clicked", 5000).show
 !SLIDE
 #Canvas
 !SLIDE transition=scrollUp
@@ -109,7 +111,8 @@
             150 - @radius, 300 - @radius,
             150 + @radius, 300 + @radius
           )
-          canvas.draw_arc(rect, 180, 180, false, paint)
+          canvas.draw_arc(rect, 180, 180,
+              false, paint)
           @radius += 10
         end
       end
@@ -120,7 +123,7 @@
 #WebView
     @@@ruby
     web = WebView.new(self)
-    web.load_url 'http://mountainrb.com'
+    web.load_url 'http://jrubyconf.com'
     self.content_view = web
 !SLIDE transition=scrollUp
 #Don't forget!
@@ -130,8 +133,6 @@
     <uses-permission
       android:name="android.permission.INTERNET"
     />
-!SLIDE center transition=scrollUp
-![](webview.png)
 
 !SLIDE
 #Multimedia: Audio
